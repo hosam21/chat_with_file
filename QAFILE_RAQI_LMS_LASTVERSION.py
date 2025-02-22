@@ -1,4 +1,3 @@
-import cv2  # Forces OpenCV to initialize first
 import os
 os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 
@@ -158,8 +157,6 @@ def run_retrieval_qa(query, retriever):
 def main():
     st.title("Multi-Modal Retrieval QA System")
     st.write("Upload a PDF file and ask questions about its contents.")
-    GROQ_API_KEY_SECRET="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"
-    LANGCHAIN_API_KEY= "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"
     uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
     if uploaded_file is not None:
         with open("temp.pdf", "wb") as f:
