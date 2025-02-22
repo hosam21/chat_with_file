@@ -1,12 +1,12 @@
 streamlit==1.39.0
 unstructured[pdf]==0.12.2
-langchain>=0.3.0
-langchain-chroma>=0.3.0
-langchain-core>=0.3.33
+langchain==0.2.0
+langchain-chroma==0.2.2  # Latest available version
+langchain-core>=0.2.43,<0.3.0  # Compatible with chroma
 sentence-transformers==2.7.0
 transformers==4.41.1
 pillow==10.3.0
-langchain-groq>=0.3.0
+langchain-groq==0.1.0  # Downgraded to compatible version
 chromadb==0.5.0
 pypdf==4.2.0
 python-magic==0.4.27
